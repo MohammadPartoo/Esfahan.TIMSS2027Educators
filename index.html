@@ -66,7 +66,7 @@
     --text:#2a2f3a;
   }
   *{margin:0;padding:0;box-sizing:border-box;}
-  html{scroll-behavior:smooth;}
+  html{scroll-behavior:smooth;overflow-x:hidden;}
   body{overflow-x:hidden;}
   body{
     font-family:"Vazirmatn","Iranian Sans","B Nazanin",Tahoma,"Segoe UI",sans-serif;
@@ -723,7 +723,7 @@
     nav.menu{
       position:fixed;top:0;right:0;bottom:0;width:min(78vw,300px);
       background:linear-gradient(180deg,var(--navy-dark),var(--navy));
-      flex-direction:column;justify-content:flex-start;gap:4px;
+      flex-direction:column;flex-wrap:nowrap;justify-content:flex-start;gap:4px;
       padding:80px 22px 30px;z-index:1200;
       transform:translateX(100%);transition:transform .35s cubic-bezier(.22,1,.36,1);
       box-shadow:-12px 0 40px rgba(0,0,0,.35);
